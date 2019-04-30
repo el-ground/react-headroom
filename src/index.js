@@ -249,6 +249,8 @@ export default class Headroom extends Component {
       } else if (action === 'unfix') {
         this.unfix()
       }
+    } else {
+      this.unfix()
     }
 
     this.lastKnownScrollY = this.currentScrollY
