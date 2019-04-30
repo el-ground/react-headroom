@@ -166,7 +166,7 @@ export default class Headroom extends Component {
     const scrollerPhysicalHeight = this.getScrollerPhysicalHeight()
     const scrollerHeight = this.getScrollerHeight()
 
-    const pastBottom = currentScrollY + scrollerPhysicalHeight > scrollerHeight
+    const pastBottom = currentScrollY + scrollerPhysicalHeight >= scrollerHeight
 
     return pastTop || pastBottom
   }
