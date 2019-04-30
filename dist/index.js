@@ -108,7 +108,7 @@ var Headroom = function (_Component) {
       var scrollerPhysicalHeight = _this.getScrollerPhysicalHeight();
       var scrollerHeight = _this.getScrollerHeight();
 
-      var pastBottom = currentScrollY + scrollerPhysicalHeight > scrollerHeight;
+      var pastBottom = currentScrollY + scrollerPhysicalHeight >= scrollerHeight;
 
       return pastTop || pastBottom;
     };
